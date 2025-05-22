@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="Medirisa.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Medirisa</title>
+    </head>
+    <body>
+        <div class="form_div">
+            <form>
+                <h2 id="head"></h2>
+                <p id="display"></p>
+
+                <label class="Required_text" for="Required"><span>*</span></label> Required</label><br><br><br>
+
+                <label for="Full_Names">1. Full Names <span>*</span></label><br>
+                <input type="text" id="Full_Names"><br>
+
+                <label for="student_no">2. Student Number <span>*</span></label><br>
+                <input type="tel" id="student_no" size="9" maxlength="9"><br>
+
+                <label for="year">3. Year of Study <span>*</span></label><br>
+                <input type="tel" id="year" size="1" maxlength="1"><br>
+
+                <label for="course_name">4. What is your study programme (e.g Computer Science Foundation) <span>*</span></label><br>
+                <input type="text" id="course_name"><br>
+                
+                <label for="gender">5. What gender do you identify as? <span>*</span></label><br>
+                <input class="yes_input" type="radio" id="male" name="gender">
+                <label for="gender">Male</label><br>
+                <input class="space" type="radio" id="gen"  name="gender">
+                <label for="gender">Female</label><br>
+                <input class="space" type="radio" id="female"  name="gender">
+                <label for="gender">Non-binary</label><br>
+                <input class="no_input" type="radio" id="none"  name="gender">
+                <label for="gender">Prefer not to say</label><br>
+
+                <label for="birth_date">6. Date of birth <span>*</span></label><br>
+                <input type="date" id="birth_date"><br>
+
+                <label for="number">7. Phone Number <span>*</span></label><br>
+                <input type="tel" id="number" size="10" maxlength="10"><br>
+
+                <label for="email">8. Student Email address <span>*</span></label><br>
+                <input type="email" id="email" size="23" maxlength="25"><br>
+                
+                <label for="skill">9. What is your skill level in Python/Java/C++ programming ? <span>*</span></label><br>
+                <input class="yes_input" type="radio" id="Beginner" name="skill">
+                <label for="skill">Beginner</label><br>
+                <input class="space" type="radio" id="Intermediate"  name="skill">
+                <label for="skill">Intermediate</label><br>
+                <input class="space" type="radio" id="Expert"  name="skill">
+                <label for="skill">Expert</label><br>
+                <input class="no_input" type="radio" id="other"  name="skill">
+                <label for="skill">other</label><br>
+
+                <label for="participation">10. Have you ever been participated in hackethon before ? <span>*</span></label><br>
+                <input class="yes_input" type="radio" id="yes" name="participation">
+                <label for="Beginner">Yes</label><br>
+                <input class="no_input" type="radio" id="No"  name="participation">
+                <label for="participation">No</label><br>
+
+                <label class="experience_text" for="group_exp">11. Have you ever participated in a group competition before? <span>*</span></label><br><br>
+                <label class="experience" for="group_exp">If none were achieved enter NA</label><br>
+                <input type="text" id="group_exp"><br>
+
+                <label for="conditions">12. Do you have any allergies or medical conditions that would limit high level activity? <span>*</span></label><br>
+                <input class="yes_input" type="radio" id="yes" name="conditions">
+                <label for="conditions">Yes</label><br>
+                <input class="no_input" type="radio" id="No"  name="conditions">
+                <label for="conditions">No</label><br>
+
+                <label for="motivation">13. Write a motivation of 200 words why would you like to participate in Datathon <span>*</span></label><br>
+                <input type="text" id="motivation" size="200" maxlength=""><br>
+
+                <label for="link">13. Paste a open access link to your CV(test it first if it open) <span>*</span></label><br>
+                <input type="text" id="link"><br>
+
+                <button onclick="myFunc()">Submit</button>
+
+                <script src="Medirisa.js"></script>
+            </form>
+        </div>
+    </body>
+</html>

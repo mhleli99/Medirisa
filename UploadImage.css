@@ -1,0 +1,8 @@
+img{
+    height: 140px;
+    width: 140px;
+    border-radius: 100px;
+    border: 1px solid blue;
+    object-fit: cover;
+    background: #dfdfdf;
+}
